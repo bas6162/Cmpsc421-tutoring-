@@ -9,6 +9,7 @@ public class User
     String username;
 
     HashMap<String,Class> classes;
+    HashMap<Integer, Appointment> appointments;
 
     public User(String fname, String lname, String password, String username) {
         this.fname = fname;
@@ -22,5 +23,8 @@ public class User
         classes.put(newClass.className,newClass);
     }
 
-
+    void addAppointment(Appointment appointment)
+    {
+        appointments.put(,appointment);
+    }
 }
