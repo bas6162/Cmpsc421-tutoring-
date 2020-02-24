@@ -6,6 +6,10 @@ public class Class {
     String className;
     int classNum;
 
+    public Class(String className, int classNum) {
+        this.className = className;
+        this.classNum = classNum;
+    }
 
     public String getClassName() {
         return className;
