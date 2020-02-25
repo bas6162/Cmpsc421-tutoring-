@@ -40,4 +40,12 @@ public class Class {
     public void setClassNum(int classNum) {
         this.classNum = classNum;
     }
+
+    public HashMap<String, Tutor> getTutors() {
+        return tutors;
+    }
+
+    public void setTutors(HashMap<String, Tutor> tutors) {
+        this.tutors = tutors;
+    }
 }

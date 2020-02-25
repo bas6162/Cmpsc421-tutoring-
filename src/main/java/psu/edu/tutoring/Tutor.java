@@ -20,6 +20,14 @@ public class Tutor {
     }
 
 
+    public HashMap<String, Class> getTutoringClasses() {
+        return tutoringClasses;
+    }
+
+    public void setTutoringClasses(HashMap<String, Class> tutoringClasses) {
+        this.tutoringClasses = tutoringClasses;
+    }
+
     //setters and getters
     public String getTutorName() {
         return tutorName;
