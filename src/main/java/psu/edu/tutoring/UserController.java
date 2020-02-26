@@ -32,4 +32,11 @@ public class UserController {
         users.remove(username);
         return "User " + username + " deleted";
     }
+
+    @PutMapping("/user/addClass")
+    String addClass(@RequestParam(name = "username") String username,@RequestBody Class aClass)
+    {
+        users.get(username).addClass(aClass);
+        return aClass.className + " has been added to your classes";
+    }
 }
