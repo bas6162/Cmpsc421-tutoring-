@@ -7,10 +7,9 @@ import java.util.HashMap;
 public class DashboardController {
 
     @GetMapping("/user/classes")
-    public HashMap<String, Class> getUserClasses(@RequestBody User user)
+    public HashMap<String, Class> getUserClasses(@RequestParam(name="className")String className, @RequestBody User user)
     {
-        return user.classes;
-
+        return user.getClass(className);
     }
 
     @GetMapping("/user/appointments")

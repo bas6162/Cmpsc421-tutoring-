@@ -44,6 +44,10 @@ public class User
         return classes;
     }
 
+
+    //Added this getClass to get specific class;
+    public  HashMap<String, Class> getClass(String c){return classes;}
+
     public void setClasses(HashMap<String, Class> classes) {
         this.classes = classes;
     }
@@ -58,7 +62,7 @@ public class User
 
     HashMap<String,Class> classes;
     HashMap<Integer, Appointment> appointments;
-    
+
     public User(String fname, String lname, String password, String username) {
         this.fname = fname;
         this.lname = lname;

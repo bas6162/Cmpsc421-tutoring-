@@ -42,8 +42,5 @@ public class AppointmentController {
         return "Appointment for " + className + " removed";
     }
 
-
-
-
-
+    
 }
