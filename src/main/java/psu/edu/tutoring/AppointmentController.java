@@ -19,7 +19,7 @@ public class AppointmentController {
         return appointments;
     }
 
-    @PostMapping("/appointement/create")
+    @PostMapping("/appointment/create")
     public String createAppointment(@RequestBody Appointment appointment, @RequestBody Class classes)
     {
         appointments.put(classes.getClassName(),appointment);
@@ -27,19 +27,19 @@ public class AppointmentController {
     }
 
     @PutMapping("/appointment/update")
-    public String updateAppointemnet(@RequestParam(name="className") String className,@RequestBody Appointment appointment,@RequestBody Class classes)
+    public String updateAppointment(@RequestParam(name="className") String className,@RequestBody Appointment appointment,@RequestBody Class classes)
     {
         appointments.remove(className);
         appointments.put(className, appointment);
 
-        return "Appointemnt for " + className + " updated";
+        return "Appointment for " + className + " updated";
     }
 
-    @DeleteMapping("/apointment/delete")
+    @DeleteMapping("/appointment/delete")
     public String deleteAppointment(@RequestParam(name="className")String className, @RequestBody Appointment appointment)
     {
         appointments.remove(className);
-        return "Appointement for " + className + " removed";
+        return "Appointment for " + className + " removed";
     }
 
 
