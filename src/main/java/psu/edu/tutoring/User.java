@@ -58,7 +58,7 @@ public class User
 
     HashMap<String,Class> classes;
     HashMap<Integer, Appointment> appointments;
-
+    
     public User(String fname, String lname, String password, String username) {
         this.fname = fname;
         this.lname = lname;
