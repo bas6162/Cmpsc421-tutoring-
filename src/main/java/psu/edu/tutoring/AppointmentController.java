@@ -27,7 +27,7 @@ public class AppointmentController {
     }
 
     @PutMapping("/appointment/update")
-    public String updateAppointemnet(@RequestParam(name="className") String className,@RequestBody Appointment appointment,@RequestBody Class classes)
+    public String updateAppointment(@RequestParam(name="className") String className,@RequestBody Appointment appointment,@RequestBody Class classes)
     {
         appointments.remove(className);
         appointments.put(className, appointment);
