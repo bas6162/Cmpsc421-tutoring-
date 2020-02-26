@@ -9,6 +9,12 @@ public class TutorsController {
 
     public HashMap<String, Tutor> tutors = new HashMap<>();
 
+    @GetMapping("/tutor/tutorinfo")
+    public Tutor getTutorInfo(@RequestParam(name="tutorName")String tutorName,@RequestBody Tutor tutor)
+    {
+        return tutors.get(tutorName);
+    }
+
     @PostMapping("/tutor/create")
     public String createTutor(@RequestBody Tutor tutor)
     {
