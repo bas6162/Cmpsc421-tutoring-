@@ -1,8 +1,6 @@
 package psu.edu.tutoring;
 
-
 import org.springframework.web.bind.annotation.*;
-
 import java.util.HashMap;
 
 @RestController
@@ -20,7 +18,6 @@ public class DashboardController {
     {
         return user.appointments;
     }
-
 
 
 }
