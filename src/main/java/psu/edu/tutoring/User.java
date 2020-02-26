@@ -66,6 +66,8 @@ public class User
         this.username = username;
     }
 
+    private int apptId = 0;
+
     void addClass(Class newClass)
     {
         classes.put(newClass.className,newClass);
@@ -73,6 +75,7 @@ public class User
 
     void addAppointment(Appointment appointment)
     {
-        appointments.put(,appointment);
+        appointments.put(apptId,appointment);
+        apptId++;
     }
 }
